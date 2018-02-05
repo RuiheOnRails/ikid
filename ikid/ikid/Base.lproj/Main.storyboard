@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Br-pb-uAe">
+                                <rect key="frame" x="136.5" y="363" width="47" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="flipPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l9J-TK-ggd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats the object-oriented way to become wealthy?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coe-W9-fbK">
+                                <rect key="frame" x="20" y="187" width="280" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Br-pb-uAe" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="OLw-R7-DIF"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="4Br-pb-uAe" secondAttribute="bottom" constant="20" id="Scr-UU-9gT"/>
+                            <constraint firstItem="coe-W9-fbK" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="eWR-XM-qgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="coe-W9-fbK" secondAttribute="trailing" constant="20" id="fea-wQ-Za4"/>
+                            <constraint firstItem="coe-W9-fbK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="gOI-ea-Scv"/>
+                            <constraint firstItem="coe-W9-fbK" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="nkw-5E-KYZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Code" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="lblJoke" destination="coe-W9-fbK" id="XUt-c6-MsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.125" y="-321.25"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="MaT-3w-cNp">
+            <objects>
+                <viewController id="THu-sO-HcQ" customClass="DadJokeViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xea-v0-yId">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What noise does a 747 make when it bounces?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-eq-aVF">
+                                <rect key="frame" x="20" y="186.5" width="280" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="box-fd-9oi">
+                                <rect key="frame" x="137" y="363" width="47" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="flipPressed:" destination="THu-sO-HcQ" eventType="touchUpInside" id="KAA-xH-b2K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="box-fd-9oi" firstAttribute="centerX" secondItem="Xea-v0-yId" secondAttribute="centerX" id="87J-2y-PX5"/>
+                            <constraint firstItem="gfY-eq-aVF" firstAttribute="centerX" secondItem="Xea-v0-yId" secondAttribute="centerX" id="IOo-mC-ygO"/>
+                            <constraint firstItem="gfY-eq-aVF" firstAttribute="leading" secondItem="CpO-6E-q7x" secondAttribute="leading" constant="20" id="Inz-8s-w36"/>
+                            <constraint firstItem="CpO-6E-q7x" firstAttribute="bottom" secondItem="box-fd-9oi" secondAttribute="bottom" constant="20" id="Uw4-tz-UdK"/>
+                            <constraint firstItem="CpO-6E-q7x" firstAttribute="trailing" secondItem="gfY-eq-aVF" secondAttribute="trailing" constant="20" id="imW-GX-KiY"/>
+                            <constraint firstItem="gfY-eq-aVF" firstAttribute="centerY" secondItem="Xea-v0-yId" secondAttribute="centerY" id="whr-HX-9cj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CpO-6E-q7x"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="first" id="4gD-i8-oXa"/>
+                    <connections>
+                        <outlet property="lblJoke" destination="gfY-eq-aVF" id="gQD-qq-q9c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dw0-20-17W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-321"/>
+        </scene>
+        <!--Windows-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are PCs like air conditioners?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcY-SZ-Rpa">
+                                <rect key="frame" x="20" y="204" width="280" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7R-uQ-nAh">
+                                <rect key="frame" x="136.5" y="363" width="47" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="flipPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="k0S-0u-tSg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7R-uQ-nAh" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="FLp-8X-VlI"/>
+                            <constraint firstItem="JcY-SZ-Rpa" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="KlX-2A-tof"/>
+                            <constraint firstItem="JcY-SZ-Rpa" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="RR0-Wo-liF"/>
+                            <constraint firstItem="JcY-SZ-Rpa" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="VKX-ll-9UE"/>
+                            <constraint firstAttribute="trailing" secondItem="JcY-SZ-Rpa" secondAttribute="trailing" constant="20" id="Yct-e1-QyK"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="K7R-uQ-nAh" secondAttribute="bottom" constant="20" id="kui-7r-4bc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Windows" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="lblJoke" destination="JcY-SZ-Rpa" id="Ldn-2S-SLF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.125" y="357.5"/>
+        </scene>
+        <!--Knock Knock-->
+        <scene sceneID="HBs-Cm-1uu">
+            <objects>
+                <viewController id="K0e-WR-li8" customClass="knockKnockViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K2Z-ky-EA1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU8-TE-Xm2">
+                                <rect key="frame" x="137" y="363" width="47" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="flipPressed:" destination="K0e-WR-li8" eventType="touchUpInside" id="zcd-JC-X4N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock knock" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On1-gK-ZqI">
+                                <rect key="frame" x="20" y="222.5" width="280" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gzr-Lz-fec" firstAttribute="trailing" secondItem="On1-gK-ZqI" secondAttribute="trailing" constant="20" id="PTf-NO-t00"/>
+                            <constraint firstItem="On1-gK-ZqI" firstAttribute="leading" secondItem="gzr-Lz-fec" secondAttribute="leading" constant="20" id="hBK-9V-5SW"/>
+                            <constraint firstItem="rU8-TE-Xm2" firstAttribute="centerX" secondItem="K2Z-ky-EA1" secondAttribute="centerX" id="ntX-C3-W22"/>
+                            <constraint firstItem="On1-gK-ZqI" firstAttribute="centerX" secondItem="K2Z-ky-EA1" secondAttribute="centerX" id="uMG-NZ-ICX"/>
+                            <constraint firstItem="gzr-Lz-fec" firstAttribute="bottom" secondItem="rU8-TE-Xm2" secondAttribute="bottom" constant="20" id="vbb-us-Tqx"/>
+                            <constraint firstItem="On1-gK-ZqI" firstAttribute="centerY" secondItem="K2Z-ky-EA1" secondAttribute="centerY" id="zQO-45-Rq7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gzr-Lz-fec"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock Knock" image="first" id="1QH-XA-K0l"/>
+                    <connections>
+                        <outlet property="lblJoke" destination="On1-gK-ZqI" id="Pxb-Cj-EC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iiz-Mj-SKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="359"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="THu-sO-HcQ" kind="relationship" relationship="viewControllers" id="RID-iS-hcC"/>
+                        <segue destination="K0e-WR-li8" kind="relationship" relationship="viewControllers" id="acd-eA-D2f"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
